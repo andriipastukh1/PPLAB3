@@ -57,7 +57,7 @@ public class ConsoleMenu {
     private void createDroid() {
         String type;
         do {
-            System.out.println("Оберіть вид дроїда: 1) Assault 2) Medic 3) Sniper 4) Tank");
+            System.out.println("Оберіть вид дроїда: 1) Assault 2) Medic 3) Sniper 4) Tank, 5) Test");
             type = sc.nextLine().trim();
             if (!type.matches("[1-4]")) {
                 System.out.println("Невірний вибір. Введіть 1-4.");
@@ -74,6 +74,10 @@ public class ConsoleMenu {
             case "2" -> new MedicDroid(name);
             case "3" -> new SniperDroid(name);
             case "4" -> new TankDroid(name);
+//            case "5" -> new TestDroid(name);
+
+            // караще рзоибит в лісті  щоб поім їх звіди ивтягувати
+
             default -> throw new IllegalStateException("Невідомий тип");
         };
 

@@ -181,7 +181,7 @@ public class Arena {
                 medics.add((MedicDroid) d);
             }
         }
-
+//краще
         for (MedicDroid medic : medics) {
             Droid toHeal = findLowestHealthAlly(team, medic);
             if (toHeal != null) {
